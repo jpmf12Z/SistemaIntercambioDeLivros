@@ -1,0 +1,14 @@
+# Desliga listagem de diretórios
+Options -Indexes
+
+# Define index padrão
+DirectoryIndex public/index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Se o arquivo ou diretório não existir dentro de /public, manda para index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ public/index.php [L]
+</IfModule>
