@@ -1,24 +1,24 @@
 <?php include __DIR__ . '/../templates/header.php'; ?>
 
-<h2>Add Book</h2>
+<h2>Adicionar Livro</h2>
 
 <form method="post" action="/bb/index.php?route=book/save">
   <p>
-    <label>Title: <input type="text" name="title" required></label>
+    <label>Titulo: <input type="text" name="title" required></label>
   </p>
   <p>
-    <label>Author: <input type="text" name="author" required></label>
+    <label>Autor: <input type="text" name="author" required></label>
   </p>
   <p>
-    <label>Description:<br>
+    <label>Descrição:<br>
       <textarea name="description"></textarea>
     </label>
   </p>
   <p>
-    <label>Condition:
+    <label>Condição:
       <select name="condition">
-        <option value="new">New</option>
-        <option value="used">Used</option>
+        <option value="new">Novo</option>
+        <option value="used">Usado</option>
       </select>
     </label>
   </p>
@@ -26,9 +26,9 @@
   <!-- usuário fixo só para teste -->
   <input type="hidden" name="user_id" value="1">
 
-  <button type="submit">Save</button>
+  <button type="submit">Salvar</button>
 </form>
 
-<p><a href="/bb/index.php?route=book/list">Back to list</a></p>
+<p><a href="/bb/index.php?route=book/list">Voltar para a lista</a></p>
 
 <?php include __DIR__ . '/../templates/footer.php'; ?>

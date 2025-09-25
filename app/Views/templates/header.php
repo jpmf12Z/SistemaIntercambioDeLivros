@@ -2,13 +2,13 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <title>BookSwap - Teste</title>
+  <title>Troca de livros - Teste</title>
 </head>
 <body>
 <header>
-  <h1>BookSwap</h1>
+  <h1>Troca de livros</h1>
   <nav>
-    <a href="/bb/">Home</a>
+    <a href="/bb/">Inicio</a>
   </nav>
 </header>
 <main>
