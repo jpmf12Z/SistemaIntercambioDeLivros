@@ -35,7 +35,7 @@ class TradeController {
     $service = new \App\Services\TradeService();
     $service->proposeTrade($data);
 
-    header("Location: /bb/index.php?route=trade/list");
+    header("Location: /SistemaIntercambioDeLivros/index.php?route=trade/list");
 }
 
     public function list() {
@@ -50,7 +50,7 @@ class TradeController {
 
     if (!$id) {
         // id inválido → volta para a lista
-        header("Location: /bb/index.php?route=trade/list");
+        header("Location: /SistemaIntercambioDeLivros/index.php?route=trade/list");
         exit;
     }
 
@@ -58,7 +58,7 @@ class TradeController {
     $this->service->acceptTrade($id);
 
     // redireciona de volta
-    header("Location: /bb/index.php?route=trade/list");
+    header("Location: /SistemaIntercambioDeLivros/index.php?route=trade/list");
     exit;
 }
 
@@ -66,13 +66,13 @@ public function reject($id = null) {
     $id = $id ?? ($_GET['id'] ?? null);
 
     if (!$id) {
-        header("Location: /bb/index.php?route=trade/list");
+        header("Location: /SistemaIntercambioDeLivros/index.php?route=trade/list");
         exit;
     }
 
     $this->service->rejectTrade($id);
 
-    header("Location: /bb/index.php?route=trade/list");
+    header("Location: /SistemaIntercambioDeLivros/index.php?route=trade/list");
     exit;
 }
 

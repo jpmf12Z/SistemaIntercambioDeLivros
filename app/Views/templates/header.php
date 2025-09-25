@@ -8,7 +8,7 @@
 <header>
   <h1>Troca de livros</h1>
   <nav>
-    <a href="/bb/">Inicio</a>
+    <a href="/SistemaIntercambioDeLivros/">Inicio</a>
   </nav>
 </header>
 <main>

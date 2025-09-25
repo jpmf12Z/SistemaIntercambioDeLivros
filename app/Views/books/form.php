@@ -2,7 +2,7 @@
 
 <h2>Adicionar Livro</h2>
 
-<form method="post" action="/bb/index.php?route=book/save">
+<form method="post" action="/SistemaIntercambioDeLivros/index.php?route=book/save">
   <p>
     <label>Titulo: <input type="text" name="title" required></label>
   </p>
@@ -29,6 +29,6 @@
   <button type="submit">Salvar</button>
 </form>
 
-<p><a href="/bb/index.php?route=book/list">Voltar para a lista</a></p>
+<p><a href="/SistemaIntercambioDeLivros/index.php?route=book/list">Voltar para a lista</a></p>
 
 <?php include __DIR__ . '/../templates/footer.php'; ?>

@@ -4,8 +4,8 @@
 
 <h3>Navegação</h3>
 <ul>
-  <li><a href="/bb/index.php?route=book/list">📚 Gerenciar livros</a></li>
-  <li><a href="/bb/index.php?route=trade/list">🔄 Ver propostas comerciais</a></li>
+  <li><a href="/SistemaIntercambioDeLivros/index.php?route=book/list">📚 Gerenciar livros</a></li>
+  <li><a href="/SistemaIntercambioDeLivros/index.php?route=trade/list">🔄 Ver propostas comerciais</a></li>
 </ul>
 
 <?php include __DIR__ . '/../templates/footer.php'; ?>

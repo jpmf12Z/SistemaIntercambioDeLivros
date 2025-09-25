@@ -5,8 +5,8 @@
 <p><b>Condition:</b> <?= htmlspecialchars($book['book_condition'] ?? 'Not informed') ?></p>
 
 <p>
-  <a href="/bb/index.php?route=trade/proposeForm&book_id=<?= $book['id'] ?>">Propor Troca</a>
+  <a href="/SistemaIntercambioDeLivros/index.php?route=trade/proposeForm&book_id=<?= $book['id'] ?>">Propor Troca</a>
 </p>
 
-<p><a href="/bb/index.php?route=book/list">Voltar para a lista</a></p>
+<p><a href="/SistemaIntercambioDeLivros/index.php?route=book/list">Voltar para a lista</a></p>
 <?php include __DIR__ . '/../templates/footer.php'; ?>

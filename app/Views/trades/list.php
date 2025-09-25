@@ -26,8 +26,8 @@
       <td><?= htmlspecialchars($t['message']) ?></td>
       <td>
         <?php if ($t['status'] === 'pending'): ?>
-        <a href="/bb/index.php?route=trade/accept&id=<?= $t['id'] ?>">Aceitar</a> |
-        <a href="/bb/index.php?route=trade/reject&id=<?= $t['id'] ?>">Rejeitar</a>
+        <a href="/SistemaIntercambioDeLivros/index.php?route=trade/accept&id=<?= $t['id'] ?>">Aceitar</a> |
+        <a href="/SistemaIntercambioDeLivros/index.php?route=trade/reject&id=<?= $t['id'] ?>">Rejeitar</a>
         <?php elseif ($t['status'] === 'accepted'): ?>
         ✅ Accepted
         <?php elseif ($t['status'] === 'rejected'): ?>

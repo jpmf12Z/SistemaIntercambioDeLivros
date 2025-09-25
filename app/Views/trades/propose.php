@@ -5,7 +5,7 @@
   <p style="color:red"><?= $error ?></p>
 <?php endif; ?>
 
-<form method="post" action="/bb/index.php?route=trade/propose">
+<form method="post" action="/SistemaIntercambioDeLivros/index.php?route=trade/propose">
   <input type="hidden" name="target_book_id" value="<?= $targetBook['id'] ?>">
   <input type="hidden" name="target_user_id" value="<?= $targetBook['user_id'] ?? 2 ?>">
   
