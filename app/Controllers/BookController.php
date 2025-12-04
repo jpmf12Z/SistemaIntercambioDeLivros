@@ -35,25 +35,25 @@ class BookController {
         'user_id' => $_POST['user_id'] ?? 1
     ];
     $this->service->create($data);
-    header("Location: /bb/index.php?route=book/list");
+    header("Location: /SistemaIntercambioDeLivros/index.php?route=book/list");
 }
 
     public function delete() {
     $id = $_GET['id'] ?? null;
 
     if (!$id) {
-        header("Location: /bb/index.php?route=book/list");
+        header("Location: /SistemaIntercambioDeLivros/index.php?route=book/list");
         exit;
     }
 
     try {
         $this->service->delete($id);
-        header("Location: /bb/index.php?route=book/list");
+        header("Location: /SistemaIntercambioDeLivros/index.php?route=book/list");
         exit;
     } catch (\Exception $e) {
         // Exibe erro de forma mais amigável
         echo "<p style='color:red;'>Erro: " . htmlspecialchars($e->getMessage()) . "</p>";
-        echo "<p><a href='/bb/index.php?route=book/list'>Voltar para lista</a></p>";
+        echo "<p><a href='/SistemaIntercambioDeLivros/index.php?route=book/list'>Voltar para lista</a></p>";
     }
 
  }
